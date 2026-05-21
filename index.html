@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DavidTech - Arma tu PC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand-link" href="#inicio" aria-label="Ir al inicio">
+                <img src="logo.png" alt="Logo de DavidTech" class="header-logo">
+                <div class="brand-copy">
+                    <span class="brand-name">DavidTech</span>
+                    <span class="brand-tagline">Arma tu PC perfecta</span>
+                </div>
+            </a>
+
+            <nav class="site-nav" aria-label="Navegacion principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contenido-principal">Contenido principal</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <div class="audio-controls">
+                <button id="toggle-audio" type="button">Musica</button>
+                <button id="volume-down" type="button" aria-label="Bajar volumen">-</button>
+                <input type="range" id="volume-control" min="0" max="100" value="20" aria-label="Control de volumen">
+                <button id="volume-up" type="button" aria-label="Subir volumen">+</button>
+            </div>
+        </div>
+    </header>
+
+    <audio id="background-music" loop>
+        <source src="Mora%20-%20DETR%C3%81S%20DE%20TU%20ALMA%20%28Video%20Lyrics%29.mp3" type="audio/mpeg">
+    </audio>
+
+    <section id="inicio" class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-copy">
+                <p class="section-kicker">Inicio</p>
+                <h1>Configura una PC clara, completa y hecha para lo que realmente necesitas.</h1>
+                <p class="hero-text">
+                    En DavidTech reunimos informacion, opciones de hardware y asistencia para que puedas
+                    comparar componentes, entender cada decision y solicitar tu equipo desde una sola pagina.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contenido-principal" class="primary-link">Comenzar configuracion</a>
+                    <a href="#contacto" class="secondary-link">Hablar con soporte</a>
+                </div>
+                <div class="hero-highlights">
+                    <div class="highlight-card">
+                        <strong>Configuracion guiada</strong>
+                        <span>Procesador, RAM, grafica, almacenamiento y pantalla en un solo flujo.</span>
+                    </div>
+                    <div class="highlight-card">
+                        <strong>Resumen automatico</strong>
+                        <span>Visualiza tu seleccion y el precio total al instante antes de comprar.</span>
+                    </div>
+                    <div class="highlight-card">
+                        <strong>Atencion directa</strong>
+                        <span>Si algo falla o tienes dudas, cuentas con contacto rapido y soporte local.</span>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="hero-panel" aria-label="Resumen del servicio">
+                <h2>Que encontraras aqui</h2>
+                <p>
+                    Esta pagina incluye todas las secciones esenciales para presentar el servicio de manera
+                    ordenada: una bienvenida, informacion sobre nosotros, el contenido principal con el
+                    configurador, una galeria visual y un bloque de contacto.
+                </p>
+                <ul class="hero-checklist">
+                    <li>Explicacion simple del proceso de compra.</li>
+                    <li>Contenido estructurado para navegar sin perderse.</li>
+                    <li>Acceso directo al configurador y al formulario de pedido.</li>
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+    <section id="nosotros" class="info-section">
+        <div class="container">
+            <div class="section-heading">
+                <p class="section-kicker">Nosotros</p>
+                <h2>Quienes somos y como te ayudamos</h2>
+                <p>
+                    DavidTech esta pensado para personas que quieren comprar o personalizar una PC con mas
+                    claridad. Nuestro enfoque es explicar bien las opciones, facilitar la comparacion y darte
+                    una experiencia de compra mas organizada.
+                </p>
+            </div>
+
+            <div class="info-grid">
+                <article class="info-card">
+                    <h3>Asesoria practica</h3>
+                    <p>
+                        Presentamos los componentes principales de forma visual para que puedas elegir segun
+                        rendimiento, presupuesto y tipo de uso.
+                    </p>
+                </article>
+                <article class="info-card">
+                    <h3>Proceso transparente</h3>
+                    <p>
+                        Cada eleccion actualiza el resumen de la configuracion y el total estimado, lo que te
+                        permite tomar decisiones con mejor contexto.
+                    </p>
+                </article>
+                <article class="info-card">
+                    <h3>Soporte cercano</h3>
+                    <p>
+                        Si necesitas ayuda antes o despues de configurar tu pedido, tienes una via de contacto
+                        visible dentro de la misma pagina.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contenido-principal" class="main-content-section">
+        <div class="container section-heading">
+            <p class="section-kicker">Contenido principal</p>
+            <h2>Arma tu computadora paso a paso</h2>
+            <p>
+                Selecciona los componentes que mejor se adapten a tu proyecto, revisa el resumen en tiempo real
+                y finaliza tu solicitud desde el boton de compra.
+            </p>
+        </div>
+
+        <main class="container">
+            <div class="builder-section">
+                <h2>Configurador de PC</h2>
+
+                <div class="video-section">
+                    <h3>Aprende a armar tu PC</h3>
+                    <div class="video-wrapper">
+                        <iframe
+                            class="responsive-video"
+                            src="https://www.youtube.com/embed/Fyb4AFOshTI"
+                            title="Aprende a armar tu PC"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="component-section">
+                    <h3>Procesador</h3>
+                    <div class="options-grid" id="processor-options">
+                        <div class="option-card" data-price="150" data-name="Intel Core i3 (12th Gen)">
+                            <input type="radio" name="processor" value="i3" id="i3">
+                            <label for="i3">
+                                <img src="intel.png" alt="Intel Core i3" class="component-image">
+                                <span class="option-name">Intel Core i3</span>
+                                <span class="option-gen">12th Gen</span>
+                                <span class="option-price">$150</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="250" data-name="Intel Core i5 (13th Gen)">
+                            <input type="radio" name="processor" value="i5" id="i5">
+                            <label for="i5">
+                                <img src="intel.png" alt="Intel Core i5" class="component-image">
+                                <span class="option-name">Intel Core i5</span>
+                                <span class="option-gen">13th Gen</span>
+                                <span class="option-price">$250</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="400" data-name="Intel Core i7 (14th Gen)">
+                            <input type="radio" name="processor" value="i7" id="i7">
+                            <label for="i7">
+                                <img src="intel.png" alt="Intel Core i7" class="component-image">
+                                <span class="option-name">Intel Core i7</span>
+                                <span class="option-gen">14th Gen</span>
+                                <span class="option-price">$400</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="550" data-name="Intel Core i9 (14th Gen)">
+                            <input type="radio" name="processor" value="i9" id="i9">
+                            <label for="i9">
+                                <img src="intel.png" alt="Intel Core i9" class="component-image">
+                                <span class="option-name">Intel Core i9</span>
+                                <span class="option-gen">14th Gen</span>
+                                <span class="option-price">$550</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="350" data-name="AMD Ryzen 5 (7000 Series)">
+                            <input type="radio" name="processor" value="ryzen5" id="ryzen5">
+                            <label for="ryzen5">
+                                <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=200&amp;h=150&amp;fit=crop" alt="AMD Ryzen 5" class="component-image">
+                                <span class="option-name">AMD Ryzen 5</span>
+                                <span class="option-gen">7000 Series</span>
+                                <span class="option-price">$350</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="500" data-name="AMD Ryzen 7 (7000 Series)">
+                            <input type="radio" name="processor" value="ryzen7" id="ryzen7">
+                            <label for="ryzen7">
+                                <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=200&amp;h=150&amp;fit=crop" alt="AMD Ryzen 7" class="component-image">
+                                <span class="option-name">AMD Ryzen 7</span>
+                                <span class="option-gen">7000 Series</span>
+                                <span class="option-price">$500</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="650" data-name="AMD Ryzen 9 (7000 Series)">
+                            <input type="radio" name="processor" value="ryzen9" id="ryzen9">
+                            <label for="ryzen9">
+                                <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=200&amp;h=150&amp;fit=crop" alt="AMD Ryzen 9" class="component-image">
+                                <span class="option-name">AMD Ryzen 9</span>
+                                <span class="option-gen">7000 Series</span>
+                                <span class="option-price">$650</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component-section">
+                    <h3>Memoria RAM</h3>
+                    <div class="options-grid" id="ram-options">
+                        <div class="option-card" data-price="40" data-name="8GB DDR4">
+                            <input type="radio" name="ram" value="8gb" id="ram8">
+                            <label for="ram8">
+                                <img src="https://images.unsplash.com/photo-1562976540-1502c2145186?w=200&amp;h=150&amp;fit=crop" alt="8GB DDR4" class="component-image">
+                                <span class="option-name">8GB DDR4</span>
+                                <span class="option-price">$40</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="70" data-name="16GB DDR4">
+                            <input type="radio" name="ram" value="16gb" id="ram16">
+                            <label for="ram16">
+                                <img src="https://images.unsplash.com/photo-1562976540-1502c2145186?w=200&amp;h=150&amp;fit=crop" alt="16GB DDR4" class="component-image">
+                                <span class="option-name">16GB DDR4</span>
+                                <span class="option-price">$70</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="120" data-name="32GB DDR4">
+                            <input type="radio" name="ram" value="32gb" id="ram32">
+                            <label for="ram32">
+                                <img src="https://images.unsplash.com/photo-1562976540-1502c2145186?w=200&amp;h=150&amp;fit=crop" alt="32GB DDR4" class="component-image">
+                                <span class="option-name">32GB DDR4</span>
+                                <span class="option-price">$120</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="150" data-name="32GB DDR5">
+                            <input type="radio" name="ram" value="32gb5" id="ram32-5">
+                            <label for="ram32-5">
+                                <img src="https://images.unsplash.com/photo-1562976540-1502c2145186?w=200&amp;h=150&amp;fit=crop" alt="32GB DDR5" class="component-image">
+                                <span class="option-name">32GB DDR5</span>
+                                <span class="option-price">$150</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="200" data-name="64GB DDR5">
+                            <input type="radio" name="ram" value="64gb" id="ram64">
+                            <label for="ram64">
+                                <img src="https://images.unsplash.com/photo-1562976540-1502c2145186?w=200&amp;h=150&amp;fit=crop" alt="64GB DDR5" class="component-image">
+                                <span class="option-name">64GB DDR5</span>
+                                <span class="option-price">$200</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component-section">
+                    <h3>Tarjeta grafica</h3>
+                    <div class="options-grid" id="gpu-options">
+                        <div class="option-card" data-price="0" data-name="Integrada">
+                            <input type="radio" name="gpu" value="integrated" id="gpu-integrated" checked>
+                            <label for="gpu-integrated">
+                                <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=200&amp;h=150&amp;fit=crop" alt="Tarjeta integrada" class="component-image">
+                                <span class="option-name">Integrada</span>
+                                <span class="option-price">$0</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="200" data-name="NVIDIA GTX 1650">
+                            <input type="radio" name="gpu" value="gtx1650" id="gtx1650">
+                            <label for="gtx1650">
+                                <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=200&amp;h=150&amp;fit=crop" alt="NVIDIA GTX 1650" class="component-image">
+                                <span class="option-name">NVIDIA GTX 1650</span>
+                                <span class="option-gen">Gen 16</span>
+                                <span class="option-price">$200</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="280" data-name="NVIDIA GTX 1660 Ti">
+                            <input type="radio" name="gpu" value="gtx1660ti" id="gtx1660ti">
+                            <label for="gtx1660ti">
+                                <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=200&amp;h=150&amp;fit=crop" alt="NVIDIA GTX 1660 Ti" class="component-image">
+                                <span class="option-name">NVIDIA GTX 1660 Ti</span>
+                                <span class="option-gen">Gen 16</span>
+                                <span class="option-price">$280</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="350" data-name="NVIDIA RTX 3060">
+                            <input type="radio" name="gpu" value="rtx3060" id="rtx3060">
+                            <label for="rtx3060">
+                                <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=200&amp;h=150&amp;fit=crop" alt="NVIDIA RTX 3060" class="component-image">
+                                    <span class="option-name">NVIDIA RTX 3060</span>
+                                    <span class="option-gen">Gen 30</span>
+                                    <span class="option-price">$350</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="450" data-name="NVIDIA RTX 3070">
+                            <input type="radio" name="gpu" value="rtx3070" id="rtx3070">
+                            <label for="rtx3070">
+                                <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=200&amp;h=150&amp;fit=crop" alt="NVIDIA RTX 3070" class="component-image">
+                                <span class="option-name">NVIDIA RTX 3070</span>
+                                <span class="option-gen">Gen 30</span>
+                                <span class="option-price">$450</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="500" data-name="NVIDIA RTX 4060">
+                            <input type="radio" name="gpu" value="rtx4060" id="rtx4060">
+                            <label for="rtx4060">
+                                <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=200&amp;h=150&amp;fit=crop" alt="NVIDIA RTX 4060" class="component-image">
+                                <span class="option-name">NVIDIA RTX 4060</span>
+                                <span class="option-gen">Gen 40</span>
+                                <span class="option-price">$500</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="650" data-name="NVIDIA RTX 4070">
+                            <input type="radio" name="gpu" value="rtx4070" id="rtx4070">
+                            <label for="rtx4070">
+                                <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=200&amp;h=150&amp;fit=crop" alt="NVIDIA RTX 4070" class="component-image">
+                                <span class="option-name">NVIDIA RTX 4070</span>
+                                <span class="option-gen">Gen 40</span>
+                                <span class="option-price">$650</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="850" data-name="NVIDIA RTX 4080">
+                            <input type="radio" name="gpu" value="rtx4080" id="rtx4080">
+                            <label for="rtx4080">
+                                <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=200&amp;h=150&amp;fit=crop" alt="NVIDIA RTX 4080" class="component-image">
+                                <span class="option-name">NVIDIA RTX 4080</span>
+                                <span class="option-gen">Gen 40</span>
+                                <span class="option-price">$850</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="300" data-name="AMD RX 6600">
+                            <input type="radio" name="gpu" value="rx6600" id="rx6600">
+                            <label for="rx6600">
+                                <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=200&amp;h=150&amp;fit=crop" alt="AMD RX 6600" class="component-image">
+                                <span class="option-name">AMD RX 6600</span>
+                                <span class="option-gen">RDNA 2</span>
+                                <span class="option-price">$300</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="400" data-name="AMD RX 6700 XT">
+                            <input type="radio" name="gpu" value="rx6700xt" id="rx6700xt">
+                            <label for="rx6700xt">
+                                <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=200&amp;h=150&amp;fit=crop" alt="AMD RX 6700 XT" class="component-image">
+                                <span class="option-name">AMD RX 6700 XT</span>
+                                <span class="option-gen">RDNA 2</span>
+                                <span class="option-price">$400</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="550" data-name="AMD RX 7600">
+                            <input type="radio" name="gpu" value="rx7600" id="rx7600">
+                            <label for="rx7600">
+                                <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=200&amp;h=150&amp;fit=crop" alt="AMD RX 7600" class="component-image">
+                                <span class="option-name">AMD RX 7600</span>
+                                <span class="option-gen">RDNA 3</span>
+                                <span class="option-price">$550</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="700" data-name="AMD RX 7800 XT">
+                            <input type="radio" name="gpu" value="rx7800xt" id="rx7800xt">
+                            <label for="rx7800xt">
+                                <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=200&amp;h=150&amp;fit=crop" alt="AMD RX 7800 XT" class="component-image">
+                                <span class="option-name">AMD RX 7800 XT</span>
+                                <span class="option-gen">RDNA 3</span>
+                                <span class="option-price">$700</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component-section">
+                    <h3>Almacenamiento</h3>
+                    <div class="options-grid" id="storage-options">
+                        <div class="option-card" data-price="50" data-name="256GB SSD">
+                            <input type="radio" name="storage" value="256ssd" id="storage256">
+                            <label for="storage256">
+                                <img src="ssd.png" alt="256GB SSD" class="component-image">
+                                <span class="option-name">256GB SSD</span>
+                                <span class="option-price">$50</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="80" data-name="512GB SSD">
+                            <input type="radio" name="storage" value="512ssd" id="storage512">
+                            <label for="storage512">
+                                <img src="ssd.png" alt="512GB SSD" class="component-image">
+                                <span class="option-name">512GB SSD</span>
+                                <span class="option-price">$80</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="140" data-name="1TB SSD">
+                            <input type="radio" name="storage" value="1tbssd" id="storage1tb" checked>
+                            <label for="storage1tb">
+                                <img src="ssd.png" alt="1TB SSD" class="component-image">
+                                <span class="option-name">1TB SSD</span>
+                                <span class="option-price">$140</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="250" data-name="2TB SSD">
+                            <input type="radio" name="storage" value="2tbssd" id="storage2tb">
+                            <label for="storage2tb">
+                                <img src="ssd.png" alt="2TB SSD" class="component-image">
+                                <span class="option-name">2TB SSD</span>
+                                <span class="option-price">$250</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="400" data-name="4TB SSD">
+                            <input type="radio" name="storage" value="4tbssd" id="storage4tb">
+                            <label for="storage4tb">
+                                <img src="ssd.png" alt="4TB SSD" class="component-image">
+                                <span class="option-name">4TB SSD</span>
+                                <span class="option-price">$400</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component-section">
+                    <h3>Pantalla</h3>
+                    <div class="options-grid" id="screen-options">
+                        <div class="option-card" data-price="100" data-name='15.6" HD'>
+                            <input type="radio" name="screen" value="15hd" id="screen15hd">
+                            <label for="screen15hd">
+                                <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=200&amp;h=150&amp;fit=crop" alt='Pantalla 15.6" HD' class="component-image">
+                                <span class="option-name">15.6" HD</span>
+                                <span class="option-price">$100</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="150" data-name='15.6" FHD IPS'>
+                            <input type="radio" name="screen" value="15fhd" id="screen15fhd" checked>
+                            <label for="screen15fhd">
+                                <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=200&amp;h=150&amp;fit=crop" alt='Pantalla 15.6" FHD IPS' class="component-image">
+                                <span class="option-name">15.6" FHD IPS</span>
+                                <span class="option-price">$150</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="200" data-name='17.3" FHD IPS'>
+                            <input type="radio" name="screen" value="17fhd" id="screen17fhd">
+                            <label for="screen17fhd">
+                                <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=200&amp;h=150&amp;fit=crop" alt='Pantalla 17.3" FHD IPS' class="component-image">
+                                <span class="option-name">17.3" FHD IPS</span>
+                                <span class="option-price">$200</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="280" data-name='15.6" 144Hz IPS'>
+                            <input type="radio" name="screen" value="15-144hz" id="screen15-144hz">
+                            <label for="screen15-144hz">
+                                <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=200&amp;h=150&amp;fit=crop" alt='Pantalla 15.6" 144Hz IPS' class="component-image">
+                                <span class="option-name">15.6" 144Hz IPS</span>
+                                <span class="option-price">$280</span>
+                            </label>
+                        </div>
+                        <div class="option-card" data-price="350" data-name='15.6" 4K OLED'>
+                            <input type="radio" name="screen" value="15-4k" id="screen15-4k">
+                            <label for="screen15-4k">
+                                <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=200&amp;h=150&amp;fit=crop" alt='Pantalla 15.6" 4K OLED' class="component-image">
+                                <span class="option-name">15.6" 4K OLED</span>
+                                <span class="option-price">$350</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="summary-section">
+                <h2>Resumen de tu PC</h2>
+                <div id="selected-components">
+                    <div class="summary-item">
+                        <span class="item-label">Procesador:</span>
+                        <span class="item-value" id="summary-processor">No seleccionado</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="item-label">RAM:</span>
+                        <span class="item-value" id="summary-ram">No seleccionado</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="item-label">Tarjeta grafica:</span>
+                        <span class="item-value" id="summary-gpu">Integrada</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="item-label">Almacenamiento:</span>
+                        <span class="item-value" id="summary-storage">1TB SSD</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="item-label">Pantalla:</span>
+                        <span class="item-value" id="summary-screen">15.6" FHD IPS</span>
+                    </div>
+                </div>
+
+                <div class="total-section">
+                    <div class="total-price">
+                        <span>Total:</span>
+                        <span id="total-price">$0</span>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="buy-btn" type="button" onclick="buyPC()">Comprar PC</button>
+                        <button class="secondary-btn" type="button" onclick="saveConfiguration()">Guardar</button>
+                        <button class="secondary-btn" type="button" onclick="loadConfiguration()">Cargar</button>
+                        <button class="secondary-btn" type="button" onclick="exportConfiguration()">Exportar</button>
+                        <button class="secondary-btn" type="button" onclick="resetConfiguration()">Resetear</button>
+                    </div>
+                    <div class="import-section">
+                        <label for="import-file" class="import-btn">Importar</label>
+                        <input type="file" id="import-file" accept=".json" onchange="importConfiguration(event)" style="display: none;">
+                    </div>
+                    <div class="support-notice">
+                        <h6>Soporte tecnico</h6>
+                        <p>Si la pagina da error, contactame al <a href="tel:+18299362622">829 936 2622</a> de Altice.</p>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </section>
+
+    <section id="galeria" class="gallery-section">
+        <div class="container">
+            <div class="section-heading">
+                <p class="section-kicker">Galeria</p>
+                <h2>Vista rapida del contenido y los componentes</h2>
+                <p>
+                    Esta galeria complementa el configurador con elementos visuales del proyecto para que la
+                    experiencia se sienta mas completa y mejor organizada.
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                <article class="gallery-card">
+                    <img src="logo.png" alt="Marca DavidTech">
+                    <div class="gallery-copy">
+                        <h3>Identidad del proyecto</h3>
+                        <p>Una portada reconocible para presentar el servicio y reforzar la navegacion del sitio.</p>
+                    </div>
+                </article>
+                <article class="gallery-card">
+                    <img src="intel.png" alt="Procesadores disponibles">
+                    <div class="gallery-copy">
+                        <h3>Procesadores</h3>
+                        <p>Opciones Intel y AMD para cubrir configuraciones basicas, intermedias y avanzadas.</p>
+                    </div>
+                </article>
+                <article class="gallery-card">
+                    <img src="ssd.png" alt="Almacenamiento SSD">
+                    <div class="gallery-copy">
+                        <h3>Almacenamiento SSD</h3>
+                        <p>Alternativas de capacidad pensadas para velocidad, trabajo diario, gaming y contenido pesado.</p>
+                    </div>
+                </article>
+                <article class="gallery-card gallery-card-accent">
+                    <div class="gallery-copy">
+                        <h3>Experiencia completa</h3>
+                        <p>
+                            Navega desde el inicio hasta el contacto sin salir de la pagina, con informacion
+                            clara, resumen en vivo y acciones para guardar o exportar tu configuracion.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+        <div class="container contact-grid">
+            <div class="section-heading contact-copy">
+                <p class="section-kicker">Contacto</p>
+                <h2>Estamos listos para ayudarte con tu pedido</h2>
+                <p>
+                    Si tienes dudas sobre compatibilidad, presupuesto o el proceso de compra, puedes comunicarte
+                    directamente o usar el configurador para preparar tu orden antes de enviarla.
+                </p>
+            </div>
+
+            <div class="contact-panel">
+                <div class="contact-item">
+                    <span class="contact-label">Telefono</span>
+                    <a href="tel:+18299362622">829 936 2622</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Proveedor</span>
+                    <p>Linea Altice para soporte y seguimiento.</p>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Como continuar</span>
+                    <p>Configura tu PC, revisa el total y luego pulsa en "Comprar PC" para completar la orden.</p>
+                </div>
+                <div class="contact-actions">
+                    <a href="#contenido-principal" class="primary-link">Ir al configurador</a>
+                    <a href="tel:+18299362622" class="secondary-link">Llamar ahora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 DavidTech - Arma tu PC perfecta</p>
+            <p class="footer-support">Si la pagina da error, contactame al <a href="tel:+18299362622">829 936 2622</a> de Altice.</p>
+        </div>
+    </footer>
+
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Completa tu orden</h2>
+            <p>Ingresa tus datos de envio</p>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Tu telefono" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="direccion">Direccion:</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Calle, numero, colonia" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" name="ciudad" placeholder="Tu ciudad" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="codigo_postal">Codigo postal:</label>
+                    <input type="text" id="codigo_postal" name="codigo_postal" placeholder="Codigo postal" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Resumen de tu orden:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Resumen de tu orden" readonly></textarea>
+                </div>
+
+                <div class="delivery-info">
+                    <p><strong>Fecha estimada de entrega:</strong> <span id="fecha-entrega"></span></p>
+                    <p><strong>Tiempo de entrega:</strong> 5-7 dias habiles</p>
+                </div>
+
+                <button type="submit" class="submit-btn">Confirmar pedido</button>
+            </form>
+
+            <div id="estado"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
